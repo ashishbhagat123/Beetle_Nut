@@ -1,0 +1,56 @@
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.container > div:nth-child(2){
+    width: 70%;
+    min-height: 90vh;
+    background:url("https://images.vexels.com/media/users/3/168635/raw/9169a4949c0c1b711c2d6ca6fc7dc096-yellow-and-blue-geometric-background.jpg")
+}
+.form{
+    text-align: left;
+    width: 30%;
+    padding: 3%;
+    border-radius: 5%;
+}
+
+.form h3{
+    font-weight: 500;
+    margin: 1% 0;
+}
+.form input{
+    padding: 3% 0;
+    width: 100%;
+    margin-bottom: 3%;
+    outline: none;
+    border: 2px solid black;
+    border-radius: 5px;
+}
+.form button{
+    width: 101%;
+    padding: 4% 0;
+    margin-top: 5%;
+    background-color: black;
+    border-radius: 5px;
+    border: none;
+    color: wheat;
+}
+@media only screen and (max-width: 720px){
+    .container{
+        flex-direction: column;
+        align-items: center;
+        background-color: skyblue;
+        min-height: 95vh;
+    }
+    .form{
+        width: 80%;
+        text-align: center;
+    }
+    .container > div:nth-child(2){
+        height: fit-content;
+        min-height: 0vh;
+        background: none;
+        width: 100%;
+    }
+}

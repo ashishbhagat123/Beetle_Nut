@@ -1,0 +1,63 @@
+.container{
+    display: flex;
+    /* align-items: center; */
+    justify-content: space-between;
+}
+.container > div:nth-child(2){
+    width: 70%;
+    min-height: 90vh;
+    background:url("https://i0.wp.com/www.templatescatalog.com/wp-content/uploads/2020/07/Pink-Yellow-and-blue-geometric-background.jpg?fit=1600%2C1067&ssl=1")
+}
+.form{
+    text-align: left;
+    padding: 3%;
+    border-radius: 5%;
+    width: 30%;
+    margin-top: 15vh;
+}
+.form h3{
+    font-weight: 500;
+    margin: 1% 0;
+}
+.form input{
+    padding: 2% 0;
+    width: 100%;
+    outline: none;
+    border: 2px solid black;
+    border-radius: 5px;
+    margin-bottom: 3%;
+}
+.form button{
+    width: 101%;
+    padding: 3% 0;
+    margin-top: 5%;
+    background-color: black;
+    border: none;
+    color: wheat;
+    border-radius: 5px;
+}
+.cardWrapper{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    text-align: center;
+}
+
+@media only screen and (max-width: 720px){
+    .container{
+        flex-direction: column;
+        align-items: center;
+        background-color: skyblue;
+    }
+    .form{
+        width: 80%;
+        text-align: center;
+    }
+    .container > div:nth-child(2){
+        height: fit-content;
+        min-height: 0vh;
+        background: none;
+        width: 100%;
+    }
+}
